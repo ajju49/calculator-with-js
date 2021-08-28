@@ -1,0 +1,64 @@
+ *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Courier New', 
+        Courier, monospace;
+        
+ }
+ .container{
+     height: 100vh;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+ .calculator{
+     background: url('grass2.jpg');
+     background-position: bottom;
+     background-size: cover;
+     padding: 15px;
+     border-radius: 30px;
+     display: grid;
+     grid-template-columns: repeat(4,70px);
+ }
+ input{
+     grid-column: span 4;
+     height: 100px;
+     
+     background: linear-gradient(
+        to right bottom,
+        rgba(255,255,255,0), 
+        rgba(255,255,255,0)
+    );
+     box-shadow: inset -5 -5 12px white;
+     border: none;
+     color: black;
+     font-size: 30px;
+     font-weight: 900;
+     text-align: end;
+     margin-top: 20px;
+     margin-bottom: 20px;
+     border-radius: 10px;
+     padding: 5px;
+
+ }
+    button{
+        height: 50px;
+        width: 50px;
+        background: linear-gradient(
+            to right bottom,
+            rgba(255,255,255,0.1), 
+            rgba(255,255,255,0.2)
+        );
+        border-radius: 50%;
+        margin: 8px;
+        font-size: 20px;
+        color: black;
+        font-weight: 900;
+        border: none;
+       
+    }
+    .equal{
+        width: 125px;
+        border-radius: 40px;
+    }
